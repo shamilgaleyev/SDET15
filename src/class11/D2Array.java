@@ -1,0 +1,19 @@
+package class11;
+
+import java.util.Arrays;
+
+public class D2Array {
+    public static void main(String[] args) {
+        int[][] matrix = {{10,20,30,40},
+                          {45,55,65},
+                         {30,40,20,10,25}
+        };
+        System.out.println(matrix[2][4]);
+        System.out.println(Arrays.toString(matrix[0]));
+        int[]arr = matrix[0];
+        for (int i = 0; i < arr.length; i ++){
+            System.out.println(arr[i]);
+        }
+
+    }
+}
