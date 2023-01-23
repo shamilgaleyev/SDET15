@@ -16,7 +16,7 @@ public class Task6 {
         for (int i = 0; i < countries.length; i++) {
             for (int j = 0; j < countries[i].length; j++) {
                 System.out.print(countries[i][j] + " ");
-                sum = sum + j;
+                sum++;
             }
             System.out.println();
         }
@@ -24,12 +24,17 @@ public class Task6 {
 
         System.out.println("_____________________________");
 
+        sum = 0;
+
         for (String[] x : countries) {
             for (String y : x) {
                 System.out.print(y + " ");
+                sum++;
             }
             System.out.println();
         }
+        System.out.println(sum);
+
     }
 }
 
