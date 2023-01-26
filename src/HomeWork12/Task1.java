@@ -9,9 +9,9 @@ print the character in the middle of the String.
 For Example String str=hello =>l
                 */
         String str = "Testers";
-        int counter = 0;
+
         for (int i = 0; i < str.length(); i++) {
-            if (!str.isEmpty() && str.charAt(i) % 2 != 0 && str.charAt(i) > 3){
+            if (!str.isEmpty() && str.length() % 2 != 0 && str.length() > 3){
 
             }
         }
