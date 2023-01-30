@@ -14,5 +14,19 @@ public class Task7 {
         } else {
             System.out.println(num + " is not prime number");
         }
+
+        int given = 15;
+        boolean isPrime = true;
+        if (given > 1){
+            for (int i = 2; i < given; i++) {
+                if (given % i == 0){
+                    isPrime = false;
+                     break;
+                }
+
+            }
+        } else {
+            isPrime = false;
+        }
     }
 }

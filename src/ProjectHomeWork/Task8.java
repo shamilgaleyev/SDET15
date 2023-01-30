@@ -19,7 +19,16 @@ public class Task8 {
 
         for (int x: fib){
             System.out.print(x + " ");
-
+        }
+        System.out.println();
+        int a = 0;
+        int b = 1;
+        int c;
+        for (int i = 1; i <= 10; i++) {
+            c=a+b;
+            System.out.print(c + " ");
+            a=b;
+            b=c;
 
         }
     }

@@ -26,5 +26,8 @@ The square of the 3.9 is 15.209999999999999
                 + number2 + " is equal to " + (number1 / number2));
         double number3 = 3.9;
         System.out.println("The square of the " + number3 + " is " + (number3 * number3));
+
+
+
     }
 }
