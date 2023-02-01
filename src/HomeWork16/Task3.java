@@ -8,13 +8,19 @@ public class Task3 {
      */
 
     private String vowels(String str){
-        String strNew = str.replaceAll("[^aeiou]","");
+        String strNew = str.replaceAll("[^aeiouyAEIOUY]","");
         return strNew;
 
+    }
+
+    private String getOnlyVowels(String inputStr){
+        return inputStr.replaceAll("[^aeiouyAEIOUY]","");
     }
 
     public static void main(String[] args) {
         Task3 vowels = new Task3();
         System.out.println(vowels.vowels("Create a method that will accept a String as a parameter"));
+
+        //System.out.println(Task3.getOnlyVowels());
     }
 }
