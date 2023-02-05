@@ -40,7 +40,8 @@ public class Task3 {
 
 
     public static void main(String[] args) {
-        Task3 height = new Task3(80,"John");
+
+         Task3 height = new Task3(80,"John");
     }
 
 }
