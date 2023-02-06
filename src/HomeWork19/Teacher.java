@@ -9,10 +9,10 @@ public class Teacher {
     String name;
     String subject;
     int hours;
-    void daylySchedule(){
+    public void daylySchedule(){
         System.out.println("From 8 a.m. to 3 p.m.");
     }
-    void weekSchedule(){
+    protected void weekSchedule(){
         System.out.println("From Monday to Friday");
     }
     void plusHours(){
