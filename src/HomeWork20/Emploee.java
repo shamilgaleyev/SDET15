@@ -59,6 +59,6 @@ class Tester extends FullTime {
     public static void main(String[] args) {
         Tester emploee = new Tester("Johnson",123,100,40);
         emploee.salary();
-
+        emploee.work1();
     }
 }
