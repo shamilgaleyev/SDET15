@@ -1,7 +1,7 @@
 package review7;
 
 public class Car {
-    String make, model;
+   protected String make, model, destination;
     int year, horsePower, speed;
 
     public Car(String make, String model){
@@ -14,7 +14,7 @@ public class Car {
         this.year= year;
         this.horsePower = horsePower;
     }
-    void start(){
+    public void start(){
         System.out.println(make + "start");
     }
 
@@ -22,8 +22,9 @@ public class Car {
         System.out.println(make + "drives with speed " + speed);
     }
 
-    void drive(String destination){
+   protected String drive(String destination){
         System.out.println(make + " drive to " + destination);
+        return destination;
     }
 
     public void drive(int speed, String destination){
