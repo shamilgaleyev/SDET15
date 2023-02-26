@@ -15,16 +15,24 @@ public class Task4 {
         drinks.add("Tea");
         drinks.add("Coffee");
 
-        ListIterator<String> iterator=drinks.listIterator();
-
-        while (iterator.hasNext()){
-            String s= iterator.next();
-            if(s.contains("a")||s.contains("e")){
-                iterator.remove();
-                iterator.add("Water");
+        for (int i = 0; i <drinks.size() ; i++) {
+            String drink = drinks.get(i);
+            if(drink.contains("a")||drink.contains("e")){
+                drinks.set(i,"water");
             }
         }
         System.out.println(drinks);
+
+//        ListIterator<String> iterator=drinks.listIterator();
+//
+//        while (iterator.hasNext()){
+//            String s= iterator.next();
+//            if(s.contains("a")||s.contains("e")){
+//                iterator.remove();
+//                iterator.add("Water");
+//            }
+//        }
+//        System.out.println(drinks);
 
 
 

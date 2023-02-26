@@ -15,15 +15,15 @@ public class RemoveDemo {
         var name = "hdgttr";
         var f = 12.5;
 
-        /*
-         Iterator<String> iterator = words.iterator();
-        while(iterator.hasNext()){
-            String s = iterator.next();
-            if(s.endsWith("a")){
-                iterator.remove();
-            }
-        }
-         */
+
+//         Iterator<String> iterator = words.iterator();
+//        while(iterator.hasNext()){
+//            String s = iterator.next();
+//            if(s.endsWith("a")){
+//                iterator.remove();
+//            }
+//        }
+
 
         words.removeIf(s -> s.endsWith("a"));
         System.out.println(words);

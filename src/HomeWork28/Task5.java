@@ -13,14 +13,16 @@ public class Task5 {
         for (int i = 2; i <= 500; i+=2) {
             numbers.add(i);
         }
-        ListIterator<Integer> iterator = numbers.listIterator();
-        while (iterator.hasNext()){
-             Integer i= iterator.next();
-            if(i%5 == 0){
-                iterator.remove();
+        numbers.removeIf(x->x%5==0);
 
-            }
-        }
+//        ListIterator<Integer> iterator = numbers.listIterator();
+//        while (iterator.hasNext()){
+//             Integer i= iterator.next();
+//            if(i%5 == 0){
+//                iterator.remove();
+//
+//            }
+//        }
         System.out.print(numbers);
     }
 }

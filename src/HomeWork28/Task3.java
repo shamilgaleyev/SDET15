@@ -11,12 +11,16 @@ public class Task3 {
         words.add("Sun");
         words.add("Moon");
         words.add("Apple");
-        for(String x: words){
-            if(x.endsWith("e")){
 
-            }else {
-                System.out.print(x+ " ");
-            }
-        }
+        words.removeIf(x->x.endsWith("e"));
+        System.out.println(words);
+
+//        for(String x: words){
+//            if(x.endsWith("e")){
+//
+//            }else {
+//                System.out.print(x+ " ");
+//            }
+        //}
     }
 }
