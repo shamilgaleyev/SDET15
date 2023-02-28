@@ -12,51 +12,69 @@ abstract public class Insurance {
              Using for loop/advanced for loop/ iterator access all methods of the class.
          */
     String insuranceName;
-    abstract void getQuote();
-    abstract void cancelInsurance();
+    public abstract void getQuote();
+    public abstract void cancelInsurance();
+
+    public Insurance(String insuranceName) {
+        this.insuranceName = insuranceName;
+    }
 }
 class Car extends Insurance{
     String carModel;
 
+    public Car(String insuranceName, String carModel) {
+        super(insuranceName);
+        this.carModel = carModel;
+    }
+
     @Override
-    void getQuote() {
+    public void getQuote() {
         System.out.println("Car class method getQuote");
     }
 
     @Override
-    void cancelInsurance() {
+    public void cancelInsurance() {
         System.out.println("Car class method cancelInsurance");
     }
 }
 class Pet extends Insurance{
     String petType;
 
+    public Pet(String insuranceName, String petType) {
+        super(insuranceName);
+        this.petType = petType;
+    }
+
     @Override
-    void getQuote() {
+   public void getQuote() {
         System.out.println("Pet class method getQuote");
     }
 
     @Override
-    void cancelInsurance() {
+   public void cancelInsurance() {
         System.out.println("Pet class method cancelInsurance");
     }
 }
 class Health extends Insurance{
+    public Health(String insuranceName) {
+        super(insuranceName);
+    }
+
     @Override
-    void getQuote() {
+   public void getQuote() {
         System.out.println("Health class method getQuote");
     }
 
     @Override
-    void cancelInsurance() {
+  public   void cancelInsurance() {
         System.out.println("Health class method cancelInsurance");
     }
 }
 class Tester {
     public static void main(String[] args) {
-        Insurance c = new Car();
-        Insurance p = new Pet();
-        Insurance h = new Health();
+        Insurance c = new Car("Geico","BMW");
+        Insurance p = new Pet("Pet love", "CAt");
+        Insurance h = new Health("Aliance");
         ArrayList<Insurance> classes = new ArrayList<>();
         classes.add(c);
         classes.add(p);
