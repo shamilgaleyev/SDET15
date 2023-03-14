@@ -10,6 +10,7 @@ public class LinkedListDemo {
         names.add("Tammana");
         names.add("Temmuz");
         names.add("Sam");
+
         System.out.print(names+ " ");
         System.out.println();
 

@@ -12,6 +12,7 @@ public class Demo7 {
         names.add("Tarik");
         names.add("Abeera");
 
+
         System.out.println(names.contains("Daria"));
         System.out.println(names);
         names.remove("Sam");

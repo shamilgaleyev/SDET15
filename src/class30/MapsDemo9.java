@@ -20,6 +20,10 @@ Print all values from a country map using for each loop and iterator.
         for(var x:values){
             System.out.println(x);
         }
+        var entrySet1=contries.entrySet();
+        for(var entry: entrySet1){
+            System.out.println(entry.getValue().toUpperCase());
+        }
 
         var iterator = contries.values().iterator();
         while (iterator.hasNext()){
